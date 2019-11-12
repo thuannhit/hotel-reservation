@@ -1,4 +1,4 @@
-var booker = {
+const booker = {
     readInputData: function () {
         return {
             aArrival: [1, 3, 5, 7, 8, 8],
@@ -7,8 +7,7 @@ var booker = {
         }
     },
     getNeededRooms: function (aArrival, aDeparture) {
-
-        var aCombinedDay = aArrival.concat(aDeparture),
+        let aCombinedDay = aArrival.concat(aDeparture),
             iMaxDay = Math.max(...aCombinedDay),
             iMinDay = Math.min(...aCombinedDay),
             iLengthOfCheckingDay = iMaxDay - iMinDay + 1,
@@ -29,7 +28,6 @@ var booker = {
         return aFullfilledDay;
 
     },
-
     getOverLoadedDay:function(aNeededRooms, iDifferentDay){
         if (aNeededRooms.length>=1){
             var iMaxNeedRoom = Math.max(...aNeededRooms),
@@ -43,13 +41,12 @@ var booker = {
         }   
         return ""
     },
-
     execute: function () {
-        var oInputData = this.readInputData(),
+        let oInputData = this.readInputData(),
             aNeededRooms = this.getNeededRooms(oInputData.aArrival, oInputData.aDeparture),
             iDifferentDay = Math.min(...oInputData.aArrival.concat(oInputData.aDeparture));
         console.log(aNeededRooms);
-        var iMaxNeedRoom = Math.max(...aNeededRooms);
+        let iMaxNeedRoom = Math.max(...aNeededRooms);
         if (iMaxNeedRoom < oInputData.rooms) {
             console.log("true");
         } else {
