@@ -32,7 +32,6 @@ const booker = {
             }
         }
         return aFullfilledDay;
-
     },
     getOverLoadedDay:function(aNeededRooms, iDifferentDay){
         if (aNeededRooms.length>=1){
@@ -44,7 +43,7 @@ const booker = {
                 }
             }
             return sDay
-        }   
+        }
         return ""
     },
     execute: function () {

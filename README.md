@@ -16,7 +16,7 @@ npm start
 
 ```
 
-Now we can see the result in the console.
+Now we can see the result in the console. It shows whether the numer of rooms are now availble for the booking schedule or not. If not, It shows the days which are overloaded.
 
 In order to run the test of this code, just need to run this command:
 
@@ -26,4 +26,4 @@ npm test
 
 The test coverage is also shown in the command windows since I add alread ```nyc``` package
 
-**Note**: I am adding the input.txt file
+**Note**: We can change the input.txt file to test the result. But please follow strictly the format, because I assumed the input values are fixed and no need to validate.
