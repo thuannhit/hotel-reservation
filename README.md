@@ -8,7 +8,7 @@ In order run this task, please follow these commands in Commandline console wind
 
 git clone git@github.com:thuannhit/hotel-reservation.git
 
-cd /rotate-picture
+cd /hotel-reservation
 
 npm install
 
