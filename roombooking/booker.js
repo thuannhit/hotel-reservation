@@ -23,13 +23,12 @@ let getNeededRooms = (aArrival, aDeparture) => {
 
 let booker = {
     isEnoughRoom: (aArrival, aDeparture, rooms) => {
-        if (!Array.isArray(aArrival) || !Array.isArray(aDeparture) || !Number.isInteger(rooms)){
+        if (!Array.isArray(aArrival) || !Array.isArray(aDeparture) || !Number.isInteger(rooms)) {
             return false
         }
-        let aNeededRooms = getNeededRooms(aArrival, aDeparture);
-        console.log(aNeededRooms);
-        let iMaxNeedRoom = Math.max(...aNeededRooms);
-        if (iMaxNeedRoom < rooms) {
+        let aNeededRooms = getNeededRooms(aArrival, aDeparture),
+            iMaxNeedRoom = Math.max(...aNeededRooms);
+        if (iMaxNeedRoom <= rooms) {
             return true;
         } else {
             return false;
