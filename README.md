@@ -36,5 +36,3 @@ booker.isEnoughRoom(<Array of Arrivals>, <Array of Departure>, <Number of rooms>
 ```
 
 The test coverage is also shown in the command windows since I add alread ```nyc``` package
-
-**Note**: We can change the input.txt file to test the result. But please follow strictly the format, because I assumed the input values are fixed and no need to validate.
