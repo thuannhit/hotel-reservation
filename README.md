@@ -16,12 +16,23 @@ npm start
 
 ```
 
-Now we can see the result in the console. It shows whether the numer of rooms are now availble for the booking schedule or not. If not, It shows the days which are overloaded.
+Now we can see the result in the console. It shows whether the numer of rooms are now availble for the booking schedule or not.
 
 In order to run the test of this code, just need to run this command:
 
 ```
 npm test
+```
+
+***In oder to use the module: ***
+Please take a look at index.js, It is showing on how to import the module and use it.
+
+```
+import { booker } from './roombooking/booker.js';
+```
+And then, we just need to transfer the input values to the function:
+```
+booker.isEnoughRoom(<Array of Arrivals>, <Array of Departure>, <Number of rooms>)
 ```
 
 The test coverage is also shown in the command windows since I add alread ```nyc``` package
